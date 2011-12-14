@@ -1,0 +1,63 @@
+! urxvt config
+urxvt*depth: 32
+urxvt*termName: rxvt
+!urxvt*background: rgba:0000/0000/0200/c800
+URxvt*background:[60]black
+URxvt*scrollBar_right:	false
+URxvt*scrollBar:	false
+URxvt*letterSpace: -1
+!URxvt*borderLess:	true
+!URxvt*inheritPixmap:	true
+!URxvt*tint:		white
+!URxvt.font:             xft:Terminus:pixelsize=14:antialias=false
+!URxvt.boldFont:         xft:Terminus:bold:pixelsize=14:antialias=false
+URxvt.perl-ext-common: default,clipboard,tabbed,matcher,searchable-scrollback
+URxvt.tabbed.tabbar-fg: 3
+URxvt.tabbed.tabbar-bg: 8
+URxvt.tabbed.tab-fg:    3
+URxvt.tabbed.tab-bg:    1
+URxvt.perl-ext:        matcher
+URxvt.urlLauncher:     /usr/bin/firefox
+URxvt.matcher.button:  1 
+URxvt*matcher.pattern.1:     \\bhttps?:\/\/(www.youtube|youtube).com\/watch\\?v=([\\w-]*)|vimeo.com\/([\\w-]*)
+URxvt*matcher.launcher.1:              /usr/local/bin/mtube $0
+URxvt*matcher.pattern.2:               \\bhttps?:\/\/[\\w-.]*\/[\\w./?&@#-]*.(jpg|jpeg|png)
+URxvt*matcher.launcher.2:              feh $0
+URxvt.fading: 20
+URxvt.fadeColor: [20]black
+URxvt.saveLines:32767
+URxvt.foreground: white
+URxvt.autohide:  yes
+URxvt.new-button:  no
+URxvt.tabbed.autohide:  yes
+! fonts
+! run "fc-list" for a list of available fonts
+!URxvt*font:xft:Monospace:pixelsize=14:antialias=false
+URxvt*font:xft:Ubuntu Mono:Regular:pixelsize=16::autohint=true
+URxvt.font:xft:ubuntu mono:regular:pixelsize=16:autohint=true
+URxvt.boldFont:xft:ubuntu mono:bold:pixelsize=16:autohint=true
+URxvt.italicFont:xft:ubuntu mono:italic:pixelsize=16:autohint=true
+URxvt.boldItalicFont:xft:ubuntu mono:bold:italic:pixelsize=16:autohint=true
+URxvt*scrollTtyOutput: False
+URxvt*scrollTtyKeypress: True
+! black
+URxvt.color0  : #2E2E34343636
+URxvt.color8  : #000000000000
+! red
+URxvt.color1  : #CCCC00000000
+URxvt.color9  : #EFEF29292929
+! green
+URxvt.color2  : #4E4E9A9A0606
+URxvt.color10 : #8A8AE2E23434
+! blue
+URxvt.color4  : #34346565A4A4
+URxvt.color12 : #72729F9FCFCF
+! magenta
+URxvt.color5  : #757550507B7B
+URxvt.color13 : #ADAD7F7FA8A8
+! cyan
+URxvt.color6  : #060698209A9A
+URxvt.color14 : #3434E2E2E2E2
+! white
+URxvt.color7  : #D3D3D7D7CFCF
+URxvt.color15 : #EEEEEEEEECEC

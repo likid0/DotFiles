@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#xrdb -merge .Xresources
+
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint 0x000000 --height 12 --alpha 1 &
+
+#gnome-screensaver
+/usr/bin/xcompmgr &
+gnome-settings-daemon
+
+if [ -x /usr/bin/gnome-power-manager ] ; then
+   sleep 1
+   gnome-power-manager 2> /dev/null  &
+fi
+
+if [ -x /usr/bin/nm-applet ] ; then
+   nm-applet --sm-disable 2> /dev/null  &
+fi
+
+#kmix --keepvisibility
+
+#feh --bg-scale /home/liquid/Fondos/green-eye-girl.png &
+feh --bg-scale /home/liquid/Fondos/Skull_Wallpaper_by_LordZoltan.jpg &
+
+/usr/bin/ibm-notes8 2> /dev/null & 
+pidgin 2> /dev/null &
+/opt/agns/bin/agnclient 2> /dev/null &
+#xtacacsclient 2> /dev/null &
+/opt/ibm/c4eb/wst/bin/wst-applet & 
+/usr/bin/x3270 &
+/usr/bin/firefox &
+/opt/ibm/ibmsam/bin/ibmsaml 2> /dev/null &
+#/usr/bin/nixnote 2> /dev/null &
+/usr/bin/dropbox start 2> /dev/null &
+
+
+#exec /usr/bin/xmonad

@@ -1,0 +1,6 @@
+set from = "liquidsmail@gmail.com"
+set realname = "Daniel Parkes"
+set imap_user = "liquidsmail@gmail.com"
+set imap_pass = "PASSWD"
+set smtp_url = "smtp://liquidsmail@smtp.gmail.com:587/"
+set smtp_pass = "PASSWD"
